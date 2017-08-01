@@ -66,7 +66,7 @@ class FirstDocView(ModelView):
   column_filters += new_filters
 
   # Creation filter for RefDoc.foo (int)
-  converter.conv_int(column=RefDoc.bar,name='refdoc',reference_model=RefDoc,reference_field_name='bar')
+  new_filters = converter.conv_int(column=RefDoc.bar,name='refdoc',reference_model=RefDoc,reference_field_name='bar')
   # Adding filters
   column_filters += new_filters
 
